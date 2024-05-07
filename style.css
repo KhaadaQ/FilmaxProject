@@ -1,138 +1,198 @@
-/* Reset Start*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/* Reset Start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-  line-height: 1;
+	line-height: 1;
 }
-
-ol,
-ul {
-  list-style: none;
+ol, ul, menu {
+	list-style: none;
 }
-
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+	quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset End */
+body {
+  
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.background{
+  background-color:#1a1d24;
+
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 89px; 
+  padding-block: 80px 5px;
 }
 
-/* Reset End
->>>>>>> 6bb8b549c4ae1d325f2462f15e9027b4a2358cdb */
-
-.footer {
+.ytbIMG{
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(178deg) brightness(106%) contrast(101%);
+}
+.tools-menu{
   display: flex;
-  background-color: #1a1d24;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.social-menu{
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.main-menu{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+
+}
+.logo {
+    max-width: 100%;
+    height: 24px;
+}
+.tool-icon {
+  width: 20px;
+  height: 20px;
+}
+.fbSVG {
+  fill: #ffff;
+  height: 20px;
+}
+.wrapper{
+  max-inline-size: 1200px;
+  margin: 0 auto;
+}
+.hero-banner{
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.hero-banner__title{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+
+}
+.hero-banner__data{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+
+}
+.hero-banner__image{
+ max-height: 610px;
+ width: 75%;
+ object-fit: cover;
+}
+.aside{
+  width: 25%;
+}
+.aside__item{
+  display: flex;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  
+}
+.aside__list{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+.aside__title{
+  margin-bottom: 37px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 32px;
+}
+.aside__subtitle{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.aside__date{
+  color:#a8a8a8;
+  font-size: 11px;
+  font-weight: 400
+}
+/* .roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+.hero-banner__data{
+  background-color:#1a1d24;
+  max-width: 400px;
+  padding-top: 33px;
+  padding-left: 29px;
+
+}
+.hero-banner__description{
+  color: #a8a8a8;
+  font-size: 14px;
+  margin-block: 22px;
+  line-height: 23px;
+}
+a{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
 }

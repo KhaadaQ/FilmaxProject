@@ -1,84 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Filmax</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="background">
-        <header class="header-wrapper">
-            <img src="images/logo-1x.png" alt="Logo de la empresa Filmax" class="logo" />
-            <menu class="main-menu">
-                <li>Home</li>
-                <li>Features</li>
-                <li>About</li>
-                <li>News</li>
-                <li>Contacts</li>
-            </menu>
-            <div class="tools-menu">
-                <search class="search">
-                </search>
-            </div>
-        </header>
-        <main>
-            <section class="hero-banner">
-                <img src="images/top-promo.jpg" alt="" class="hero-banner__image">
-                <div class="hero-banner__data">
-                    <p class="hero-banner__title">TYLER PERRY'S MADEA HALLOWEEN</p>
-                    <p class="hero-banner__description">Perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium </p>
-                    <a href="#" class="hero-banner__link">Read me</a>
-                </div>
-                <aside class="aside">
-                    <h2 class="aside__title">Recent news</h2>
-                    <ul class="aside__list">
-                        <li class="aside__item">
-                            <img src="images/post-6-copyright-97x81.jpg" alt="" class="aside__image">
-                            <h3 class="aside__subtitle"></h3>
-                            <time class="aside__date"></time>
-                        </li>
-                        <li class="aside__item">
-                            <img src="images/post-5-copyright-97x81.jpg" alt="" class="aside__image">
-                            <h3 class="aside__subtitle"></h3>
-                            <time class="aside__date"></time>
-                        </li>
-                        <li class="aside__item">
-                            <img src="images/post-12-copyright-97x81.jpg" alt="" class="aside__image">
-                            <h3 class="aside__subtitle"></h3>
-                            <time class="aside__date"></time>
-                        </li>
-                    </ul>
+    <header class="wrapper">
+      <img
+        src="images/logo-1x.png"
+        alt="Logo de la Empresa de FILMAX"
+        class="logo"
+      />
 
-                </aside>
-
-            </section>
-        </main>
+      <menu class="main-menu">
+        <li>Home</li>
+        <li>Features</li>
+        <li>About</li>
+        <li>News</li>
+        <li>Contacts</li>
+      </menu>
+      <div class="tools-menu">
+        <search class="search">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="tool-icon"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+        </search>
+        <ul class="social-menu">
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tool-icon"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+          </li>
+          <li>
+            <svg
+              class="tool-icon fbSVG"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tool-icon"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+              />
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M16.5 7.5l0 .01" />
+            </svg>
+          </li>
+          <li>
+            <img
+              data-v-ac8ca204=""
+              class="tool-icon ytbIMG"
+              srcset="
+                https://img.icons8.com/?size=256&amp;id=36908&amp;format=png 1x,
+                https://img.icons8.com/?size=512&amp;id=36908&amp;format=png 2x
+              "
+              alt="YouTube icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </header>
     </div>
-    <footer class="footer">
-        <div class="footer-column"><img src="images/logo-1x.png" alt=""> ThemeREX C 2024 All rights reserved</div>
-        <div class="footer-column">
-            <ul> Movies
-                <li>Film News</li>
-                <li>Action</li>
-                <li>Coming Soon</li>
-                <li>Most Popular</li>
-                <li>Top Trailers</li>
-            </ul>
+    <main>
+      <div class="background">
+      <section class="hero-banner wrapper">
+        <img
+          src="images/top-promo.jpg"
+          alt="Hombre joven sujetando una cámara"
+          class="hero-banner__image"
+        />
+        <div class="hero-banner__data">
+          <p class="hero-banner__title">TYLER PERRY'S MADEA HALLOWEEN</p>
+          <p class="hero-banner__description">
+            Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium
+          </p>
+          <a href="#" class="hero-banner__link">Read more</a>
         </div>
-        <div class="footer-column">
-            <ul> Additional Links
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Service Plus</li>
-                <li>Privacy Policy</li>
-                <li>Contacts</li>
-            </ul>
+        <aside class="aside">
+          <h2 class="aside__title">Recent news</h2>
+          <ul class="aside__list">
+            <li class="aside__item">
+              <img
+                src="images/post-6-copyright-97x81.jpg"
+                alt=""
+                class="aside__image"
+              />
+              <div>
+                <h3 class="aside__subtitle">
+                  Attending 'Star Wars' Screening in 'Star Trek' Costume
+                </h3>
+                <time class="aside__date"> ON DEC 15, 2017</time>
+              </div>
+                
+            </li>
+            <li class="aside__item">
+              <img
+                src="images/post-5-copyright-97x81.jpg"
+                alt=""
+                class="aside__image"
+              />
+              <div>
+                <h3 class="aside__subtitle">
+                  Reuniting at the 2018 Coachella Music Festival
+                </h3>
+                <time class="aside__date">ON DEC 12, 2017</time>
+              </div>
+            </li>
+            <li class="aside__item">
+              <img
+                src="images/post-12-copyright-97x81.jpg"
+                alt=""
+                class="aside__image"
+              />
+              <div>
+                <h3 class="aside__subtitle">
+                  'Titanic', 'Goonies' Named National Film Treasures
+                </h3>
+                <time class="aside__date"> ON DEC 8, 2017</time>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </section>
+      </div>
+      <section class="slider-films wrapper">
+        <div class="slider-films__buttons">
+          <button class="slider-films__button">Recent Trailers</button>
+          <button class="slider-films__button">Most Popular</button>
+          <button class="slider-films__button">Best</button>
         </div>
-        <div class="footer-column">Newsletter</div>
-    </footer>
-</body>
+        <article class="slider">
+          <div class="slider__slide slide1">
+            <div>
+              <h3><a href="">The injustice</a></h3>
+              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+            </div>
+            
+          </div>
 
+          <div class="slider__slide slide2">
+            <div>
+              <h3><a href="">Geostorm</a></h3>
+              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+            </div>
+
+          </div>
+          <div class="slider__slide slide3">
+            <div>
+              <h3><a href="">Happy Death Day</a></h3>
+              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+            </div>
+
+          </div>
+          <div class="slider__slide slide4">
+            <div>
+              <h3><a href="">Gotham</a></h3>
+              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+            </div>
+
+          </div>
+          <div class="slider__slide slide5">
+            <div>
+              <h3><a href="">Homecoming</a></h3>
+              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+            </div>
+
+          </div>
+          <div class="slider__slide slide6">
+            <div>
+              <h3><a href="">Stranger Things</a></h3>
+              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+            </div>
+
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
