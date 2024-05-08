@@ -71,6 +71,7 @@ footer,
 header,
 hgroup,
 menu,
+button,
 nav,
 output,
 ruby,
@@ -164,16 +165,24 @@ main {
     brightness(106%) contrast(101%);
 }
 .tools-menu {
-  gap: 100px;
+  gap: 50px;
 }
 .social-menu {
   gap: 26px;
+}
+.social-menu::before{
+  content: "|";
+  padding-right: 20px;
+  color:gray;
 }
 .main-menu {
   gap: 55px;
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
+}
+.main-menu > li:not(:last-child):after{
+  content: '/';
 }
 .logo {
   max-width: 100%;
@@ -272,6 +281,13 @@ main {
   font-size: 13px;
   letter-spacing: 1.1px;
 }
+.slider-films__button:not(:last-child):after{
+  content: '/';
+  padding-inline: 15px;
+}
+.slider-films__button.active{
+  color: #ffffff;
+}
 .slider {
   display: flex;
   gap: 20px;
@@ -304,6 +320,9 @@ main {
   height: 16px;
 }
 
+div > a{
+  font-family: "Roboto", sans-serif;
+}
 .slider__slide > div {
   padding: 18px;
 }
