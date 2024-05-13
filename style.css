@@ -136,7 +136,12 @@ a {
 .header,
 .main-menu,
 .tools-menu,
-.social-menu {
+.social-menu,
+.aside__item, 
+.aside__list,
+.aside__subtitle,
+.slider,
+.slider__slide {
   display: flex;
 }
 body {
@@ -146,11 +151,17 @@ body {
 .background {
   background-color: #1a1d24;
 }
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index:;
+}
 header {
   justify-content: space-between;
   min-height: 89px;
   padding-block: 44px 29px;
   align-items: center;
+  margin-inline: auto;
 }
 .logo {
   width: 88px;
@@ -167,6 +178,7 @@ main {
 .tools-menu {
   gap: 50px;
 }
+
 .social-menu {
   gap: 26px;
 }
@@ -176,13 +188,14 @@ main {
   color:gray;
 }
 .main-menu {
-  gap: 55px;
+  /* gap: 55px; */
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
 }
-.main-menu > li:not(:last-child):after{
+.main-menu li:not(:last-child):after{
   content: '/';
+  padding-inline: 25px;
 }
 .logo {
   max-width: 100%;
@@ -210,6 +223,7 @@ main {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 37px;
 }
+
 .hero-banner__data {
   position: absolute;
   bottom: 200px;
@@ -221,11 +235,15 @@ main {
 }
 .hero-banner__image {
   max-height: 610px;
-  width: 75%;
+  max-width: 75%;
   object-fit: cover;
+  flex-basis: 74%;
 }
 .hero-banner__data {
   background-color: #1a1d24;
+  position: absolute;
+  bottom: 200px;
+  right: 0;
   max-width: 400px;
   padding-top: 33px;
   padding-left: 29px;
@@ -240,11 +258,10 @@ main {
   width: 25%;
 }
 .aside__item {
-  display: flex;
   gap: 20px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .aside__list {
-  display: flex;
   flex-direction: column;
   gap: 30px;
 }
@@ -253,7 +270,6 @@ main {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 17px;
-  margin-bottom: 32px;
 }
 .aside__subtitle {
   font-family: "Roboto Condensed", sans-serif;
@@ -263,6 +279,8 @@ main {
 .aside__date {
   color: #a8a8a8;
   font-size: 11px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.75px;
 }
 
 .slider-films {
@@ -289,13 +307,11 @@ main {
   color: #ffffff;
 }
 .slider {
-  display: flex;
   gap: 20px;
   height: 300px;
 }
 .slider__slide {
   position: relative;
-  display: flex;
   align-items: end;
   background-repeat: no-repeat;
   background-size: cover;
@@ -319,10 +335,16 @@ main {
   width: 16px;
   height: 16px;
 }
-
-div > a{
+.categories > a{
   font-family: "Roboto", sans-serif;
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 10px;
+  padding-right: 2px;
+  text-transform: capitalize;
+  color: #bdbdbd;
 }
+
 .slider__slide > div {
   padding: 18px;
 }
@@ -340,4 +362,10 @@ div > a{
 }
 .slide5 {
   background-image: url(images/post-23-copyright-485x598.jpg);
+}
+.samurai-bg {
+  background-image:url(images/bg_samurai.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }

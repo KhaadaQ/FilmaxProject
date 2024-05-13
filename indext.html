@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Filmax</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="background">
+    <div class="background sticky">
       <header class="header wrapper">
         <img
           src="images/logo-1x.png"
@@ -119,7 +122,26 @@
               Perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium
             </p>
-            <a href="#" class="hero-banner__link">Read more</a>
+            <a href="#" class="hero-banner__link"
+              >Read more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#e0041d"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
+            </a>
           </div>
           <aside class="aside">
             <h2 class="aside__title">Recent news</h2>
@@ -191,7 +213,11 @@
             </svg>
             <div>
               <h3><a href="">The injustice</a></h3>
-              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+              <div class="categories">
+                <a href="">Comedy,</a>
+                <a href="">Drama,</a>
+                <a href="">Thriller</a>
+              </div>
             </div>
           </div>
 
@@ -212,7 +238,11 @@
             </svg>
             <div>
               <h3><a href="">Geostorm</a></h3>
-              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+              <div class="categories">
+                <a href="">Comedy,</a>
+                <a href="">Drama,</a>
+                <a href="">Thriller</a>
+              </div>
             </div>
           </div>
           <div class="slider__slide slide3">
@@ -232,7 +262,11 @@
             </svg>
             <div>
               <h3><a href="">Happy Death Day</a></h3>
-              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+              <div class="categories">
+                <a href="">Comedy,</a>
+                <a href="">Drama,</a>
+                <a href="">Thriller</a>
+              </div>
             </div>
           </div>
           <div class="slider__slide slide4">
@@ -252,7 +286,11 @@
             </svg>
             <div>
               <h3><a href="">Gotham</a></h3>
-              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+              <div class="categories">
+                <a href="">Comedy,</a>
+                <a href="">Drama,</a>
+                <a href="">Thriller</a>
+              </div>
             </div>
           </div>
           <div class="slider__slide slide5">
@@ -272,18 +310,197 @@
             </svg>
             <div>
               <h3><a href="">Homecoming</a></h3>
-              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+              <div class="categories">
+                <a href="">Comedy,</a>
+                <a href="">Drama,</a>
+                <a href="">Thriller</a>
+              </div>
             </div>
           </div>
-          <div class="slider__slide slide6">
+          <!-- <div class="slider__slide slide6">
             <div>
               <h3><a href="">Stranger Things</a></h3>
-              <a href="">Comedy</a> <a href="">Drama</a><a href="">Thriller</a>
+              <div class="categories">
+                <a href="">Comedy</a>
+               <a href="">Drama</a>
+                <a href="">Thriller</a>
+              </div>
             </div>
-          </div>
+          </div> -->
         </article>
       </section>
     </main>
-    <footer></footer>
+    <section class="samurai-bg wrapper">
+      <article class="samurai__article">
+        <h2>New releases</h2>
+        <h3>The last samurai</h3>
+        <div class="samurai__subtitle">
+          <span>HBO Series</span> <span>2 seasons</span>
+        </div>
+        <p class="samurai__dsecription">
+          The last samurai is a 2003 American epic period drama war film
+          directed and co-produced by Edward Zwick, who also co-wrote the
+          screenplay with John Logan and Marsahll Herskovitz. The film stars Tom
+          Cruise, who also co-produced.
+        </p>
+        <div class="samurai__links">
+          <a href="" class="samurai__link"> View more information</a>
+          <a href="" class= "samurai__link">Watch trailer</a>
+        </div>
+      </article>
+    </section>
+    <!-- <section class="films">
+      <article class="films__article">
+        <img
+        src="images/post-27-copyright-485x665.jpg"
+        alt=""
+        class="movies__image"
+      />
+      <div class="gf-data">
+        <h3>Inferno</h3>
+        <a href="">Adventure</a>
+        <div class="gf-links">
+          <a href="">Watch Trailer</a>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 12H18M18 12L13 7M18 12L13 17"
+              stoke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="">More Information</a>
+        </div>
+      </div>
+      </article>
+    </section>
+    <section class="films">
+      <article class="films__article">
+        <img
+        src="images/post-25-copyright-485x665.jpg"
+        alt=""
+        class="movies__image"
+      />
+      <div class="gf-data">
+        <h3>Inferno</h3>
+        <a href="">Adventure</a>
+        <div class="gf-links">
+          <a href="">Watch Trailer</a>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 12H18M18 12L13 7M18 12L13 17"
+              stoke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="">More Information</a>
+        </div>
+      </div>
+      </article>
+    </section>
+    <section class="films">
+      <article class="films__article">
+        <img
+        src="images/post-23-copyright-485x665.jpg"
+        alt=""
+        class="movies__image"
+      />
+      <div class="gf-data">
+        <h3>Inferno</h3>
+        <a href="">Adventure</a>
+        <div class="gf-links">
+          <a href="">Watch Trailer</a>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 12H18M18 12L13 7M18 12L13 17"
+              stoke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="">More Information</a>
+        </div>
+      </div>
+      </article>
+    </section>
+    <section class="films">
+      <article class="films__article">
+        <img
+        src="images/post-29-copyright-485x665.jpg"
+        alt=""
+        class="movies__image"
+      />
+      <div class="gf-data">
+        <h3>Inferno</h3>
+        <a href="">Adventure</a>
+        <div class="gf-links">
+          <a href="">Watch Trailer</a>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 12H18M18 12L13 7M18 12L13 17"
+              stoke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="">More Information</a>
+        </div>
+      </div>
+      </article>
+    </section>
+    <section class="opinions">
+      <div class="opinions__opinion"><p class="opinions-text">"I appreciate the high quality of your products, guys!"</p><p class="opinions-name">Martin Moore</p><span class="occupation">Film expert</span></div>
+      <div class="opinions__opinion"><p class="opinions-text">"Everything is great about this website, we liked it"</p><p class="opinions-name">Andrea Garcia</p><span class="occupation">Film expert</span></div>
+      <div class="opinions__opinion"><p class="opinions-text">"This was fun for all of my friends. Thank you so much!"</p><p class="opinions-name">Mike Stevens</p><span class="occupation">Film expert</span></div>
+    </section>
+    <section class="news-grid">
+      <h3>Latest News</h3>
+      <p>Stay tuned for all the latest entertainment news and TV premiers</p>
+      <div class="grid-slide__1">
+        <h4>Home Grid, News, & Updates</h4>
+        <p>9 Films are vying for foreign oscar nomination</p>
+      </div>
+      <div class="grid-slide__2">
+        <h4>Home Grid, News, & Updates</h4>
+        <p>'Titanic', 'Goonies' Named national films treasures</p>
+      </div>
+      <div class="grid-slide__3">
+        <h4>Home Grid, News, & Updates</h4>
+        <p>Reuniting at the 2018 Coachella Music Festival</p>
+      </div>
+      <div class="grid-slide__4">
+        <h4>Home Grid, News, & Updates</h4>
+        <p>Attending 'Star Wars' screening in 'Star Trek costume'</p>
+      </div>
+      <p>Browse more news</p>
+    </section>
+
+    <footer>
+      <img
+      src="images/logo-1x.png"
+      alt="Logo de la Empresa de FILMAX"
+      class="logo"
+    />
+    <p>ThemeREX (?) 2024. All rights reserved.</p>
+    <h3>Movies</h3>
+    <ul>
+    <li>Films News</li>
+    <li>Action</li>
+    <li>Coming soon</li>
+    <li>Most popular</li>
+    <li>Top Trailers</li></ul>
+
+    <h3>Additional links</h3>
+    <ul>
+      <li>About</li>
+      <li>Gallery</li>
+      <li>Service Plus</li>
+      <li>Privacy Policy</li>
+      <li>Contacts</li>
+    </ul>
+    <h3>Newsletter</h3>
+    <input type="email" name="" id="">
+    </footer>
   </body>
-</html>
+</html> -->
