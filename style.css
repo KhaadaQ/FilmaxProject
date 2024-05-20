@@ -195,7 +195,7 @@ main {
     brightness(106%) contrast(101%);
 }
 .tools-menu {
-  gap: 50px;
+  gap: 40px;
 }
 
 .social-menu {
@@ -211,6 +211,7 @@ main {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
 }
+
 .main-menu li:not(:last-child):after {
   content: "/";
   padding-inline: 25px;
@@ -220,28 +221,31 @@ main {
 .logo {
   max-width: 100%;
   height: 24px;
+  cursor: pointer;
 }
 .tool-icon {
   width: 16px;
   height: 16px;
+  cursor: pointer;
+}
+.tw{
+  fill: #ffffff;
+  transition: all 0.5s ease;
 }
 .fbSVG {
   fill: #ffff;
   height: 16px;
-}
-.ytbIMG {
   transition: all 0.5s ease;
 }
-.fbSVG {
+.ytb {
   transition: all 0.5s ease;
-}
-.tw {
-  transition: all 0.5s ease;
+  fill: #ffffff;
 }
 .ig {
   transition: all 0.5s ease;
+  fill: #ffffff;
 }
-.ytbIMG:hover {
+.ytb:hover {
   fill: #a00014;
 }
 .fbSVG:hover {
@@ -262,6 +266,12 @@ main {
   display: flex;
   gap: 30px;
   padding-bottom: 200px;
+}
+.hero-banner__link{
+  transition: color 0.5s ease;
+}
+.hero-banner__link:hover{
+color:#a00014 ;
 }
 .hero-banner__title {
   font-family: "Roboto Condensed", sans-serif;
@@ -314,6 +324,15 @@ main {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 17px;
+}
+.aside__title::after{
+  content: "";
+  display: inline-block;
+  background-color: #e0041d;
+  width: 28px;
+  height: 1px;
+  margin: -1px 0px 6px 16px;
+
 }
 .aside__subtitle {
   font-family: "Roboto Condensed", sans-serif;
