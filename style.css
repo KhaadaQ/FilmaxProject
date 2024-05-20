@@ -154,7 +154,10 @@ a {
 .btnContainer,
 .footer,
 .footer__data,
-.footer__social__svg  {
+.footer__social__svg,
+.news__gridarticle,
+.samurai__link,
+.samurai__links {
   display: flex;
 }
 body {
@@ -204,7 +207,6 @@ main {
   color: gray;
 }
 .main-menu {
-  /* gap: 55px; */
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
@@ -226,6 +228,30 @@ main {
 .fbSVG {
   fill: #ffff;
   height: 16px;
+}
+.ytbIMG {
+  transition: all 0.5s ease;
+}
+.fbSVG {
+  transition: all 0.5s ease;
+}
+.tw {
+  transition: all 0.5s ease;
+}
+.ig {
+  transition: all 0.5s ease;
+}
+.ytbIMG:hover {
+  fill: #a00014;
+}
+.fbSVG:hover {
+  fill: #2e4378;
+}
+.tw:hover {
+  fill: #1da1f3;
+}
+.ig:hover {
+  fill: #a22372;
 }
 .wrapper {
   max-inline-size: 1200px;
@@ -344,6 +370,7 @@ main {
   border-radius: 50%;
   padding: 15px;
   translate: -50% -50%;
+  transition: all 0.5s ease;
 }
 .slider__slide:hover > svg {
   border: 2px solid rgb(255 255 255/1);
@@ -453,6 +480,18 @@ main {
 }
 .samurai__link {
   color: #1a1d24;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.playBox {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.samurai__link:hover svg {
+  stroke: #e0041d;
 }
 .samurai__link:first-child {
   color: #e0041d;
@@ -505,10 +544,15 @@ main {
   text-transform: capitalize;
   color: #bdbdbd;
 }
+/* .films_link {
+  transition: color 0.5s ease;
+}
+.films__link:hover{
+  cursor: pointer;
+  color: gray;
+} */
 .films__links {
   position: relative;
-  /* align-items: center; */
-  /* gap: 10px; */
   bottom: -40px;
   opacity: 0;
   transition: all 0.5s;
@@ -635,7 +679,6 @@ main {
 }
 
 .news__gridarticle {
-  display: flex;
   flex-direction: column;
   justify-content: end;
   background-repeat: no-repeat;
@@ -644,7 +687,6 @@ main {
   padding: 1em 1.5em;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
-  /* padding: 2.1em 1.9em; */
 }
 
 .news__gridarticle.article1 {
@@ -710,7 +752,6 @@ main {
 }
 
 .news__likes:hover svg {
-  /* margin-right: 2.75px; */
   color: #ffffff;
 }
 
@@ -721,7 +762,6 @@ main {
 }
 
 .news__comments:hover svg {
-  /* margin-right: 1.75px; */
   color: #ffffff;
 }
 
@@ -766,13 +806,17 @@ main {
   padding: 20px 35px;
   border-radius: 5%;
   letter-spacing: 1px;
+  transition: background-color 0.5s ease;
+}
+.endBtn:hover {
+  cursor: pointer;
+  background-color: #a00014;
 }
 .footer {
   background-color: #1a1d24;
   color: #b8babb;
   padding-block: 120px;
   justify-content: space-evenly;
-
 }
 .footer__data {
   flex-direction: column;
@@ -836,15 +880,15 @@ main {
 .footer__email {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid gray;
   letter-spacing: 2.2px;
   padding: 7px 35px 17px 0px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 11px;
   color: #ffffff;
-  caret-color: #ffffff;
   width: 100%;
+  box-sizing: border-box;
 }
 .footer__form {
   position: relative;
@@ -885,6 +929,10 @@ main {
   background-color: #1da1f3;
   border-radius: 50%;
   color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+.footer__social__svg .twitter:hover {
+  background-color: #0693e3;
 }
 
 .footer__social__svg .facebook {
@@ -893,6 +941,10 @@ main {
   background-color: #3a559f;
   border-radius: 50%;
   color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+.footer__social__svg .facebook:hover {
+  background-color: #2e4378;
 }
 
 .footer__social__svg .instagram {
@@ -901,6 +953,10 @@ main {
   background-color: #ce2e92;
   border-radius: 50%;
   color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+.footer__social__svg .instagram:hover {
+  background-color: #a22372;
 }
 
 .footer__social__svg .youtube {
@@ -908,6 +964,29 @@ main {
   line-height: 0;
   background-color: #e0011a;
   border-radius: 50%;
-  color: #ffffff;
+  transition: background-color 0.5s ease;
 }
-
+.footer__social__svg .youtube:hover {
+  background-color: #a00014;
+}
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.arrow-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: stroke 0.3 ease;
+}
+.input-arrow {
+  stroke: #ffffff;
+  width: 24px;
+  height: 36px;
+}
+.input-container:hover .input-arrow {
+  stroke: #e0041d;
+}
