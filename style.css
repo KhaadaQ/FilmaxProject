@@ -1333,6 +1333,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-basis: 100%;
+  transform: translateX(6%);
 }
 .video-container iframe {
   position: absolute;
@@ -1524,12 +1525,14 @@ background-color: #2e4378;
   font-size: 36px;
   color: #000;
   translate: 190%;
+  transform: translateX(10%);
 }
 
 .suggestions-slider {
   gap: 20px;
   height: 300px;
   padding-top: 50px;
+  transform: translateX(10px);
 }
 .suggestions-slider__slide {
   position: relative;
